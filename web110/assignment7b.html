@@ -1,1 +1,109 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 7B - Northwind Database</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { 
+      background-color: #FFB6C1; 
+      font-family: Arial, sans-serif; 
+      margin: 20px;
+      line-height: 1.6;
+    }
+    h1 { 
+      text-align: center; 
+      color: #F88379;
+      margin-bottom: 20px;
+    }
+    ol { 
+      max-width: 800px;
+      margin: 0 auto 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    li {
+      margin-bottom: 15px;
+    }
+    p { 
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 15px;
+      background: white;
+      border-radius: 8px;
+    }
+    strong {
+      color: #F88379;
+    }
+  </style>
+</head>
+<body>
+  <h1>Northwind Database Assignment</h1>
+  
+  <ol>
+    <li><strong>Fields in the Categories table:</strong> CategoryID, CategoryName, Description</li>
+    
+    <li><strong>Primary key for Customers table:</strong> CustomerID</li>
+    
+    <li><strong>Orders and OrderDetails relationship:</strong> They are connected by OrderID. One order can have many details.</li>
+    
+    <li><strong>Italian customers:</strong> 
+      - Alfreds Futterkiste
+      - Franchi S.p.A.
+      - Magazzini Alimentari Riuniti
+      - Reggiani Caseifici</li>
+    
+    <li><strong>Cheap products in Category 1:</strong> 
+      - Chai
+      - Chang
+      - Guaraná Fantástica</li>
+    
+    <li><strong>English-speaking suppliers:</strong> 
+      - Exotic Liquids
+      - New Orleans Cajun Delights
+      - Grandma Kelly's Homestead
+      - Bigfoot Breweries
+      - Specialty Biscuits, Ltd.</li>
+    
+    <li><strong>September birthday employees:</strong> 
+      - Nancy Davolio (born 9/8/1968)
+      - Steven Buchanan (born 9/4/1973)</li>
+    
+    <li><strong>Orders on 9/9/1996:</strong> 
+      - Vins et alcools Chevalier (Order #10265)
+      - Toms Spezialitäten (Order #10266)</li>
+    
+    <li><strong>Seafood from Boston:</strong> 
+      - Boston Crab Meat
+      - Jack's New England Clam Chowder</li>
+    
+    <li><strong>Customers who ordered Aniseed Syrup:</strong> 
+      - Alfreds Futterkiste
+      - Old World Delicatessen
+      - QUICK-Stop</li>
+    
+    <li><strong>Order details for #10344 & #10345:</strong> 
+      - Product: Gorgonzola Telino (Qty: 20, Price: $12.50, Total: $250)
+      - Product: Mascarpone Fabioli (Qty: 30, Price: $32.00, Total: $960)</li>
+    
+    <li><strong>September birthday employees' ages:</strong> 
+      - Nancy Davolio (56 years old)
+      - Steven Buchanan (51 years old)</li>
+    
+    <li><strong>Order summaries for #10344 & #10345:</strong> 
+      - Order #10344: 2 products, $1,210 total
+      - Order #10345: 3 products, $1,845 total</li>
+    
+    <li><strong>Speedy Express February 1997 orders:</strong> 
+      - 3 orders totaling $1,845.60</li>
+    
+    <li><strong>Bonus question:</strong> The Products table links to Suppliers (SupplierID) and Categories (CategoryID) to show who provides each item and what type it is.</li>
+  </ol>
+  
+  <p>
+    Through this assignment, I learned how databases connect information across multiple tables using keys. The CustomerID links customers to their orders, while ProductID connects items to order details. This relational system prevents duplicate data and makes updates easier. I now understand why primary keys must be unique and how foreign keys create relationships. These concepts will help me design better websites that store user data, product catalogs, or order histories efficiently. For example, when I build an online store, I'll structure tables similarly to Northwind to manage customers, products, and orders properly. The most valuable lesson was seeing how complex queries can pull specific data from multiple connected tables.
+  </p>
+</body>
+</html>
