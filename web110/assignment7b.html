@@ -5,33 +5,31 @@
   <title>Assignment 7B - Northwind Database</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    body { 
-      background-color: #FFB6C1; 
-      font-family: Arial, sans-serif; 
+    body {
+      background-color: #FFB6C1;
+      font-family: Arial, sans-serif;
       margin: 20px;
-      line-height: 1.6;
     }
-    h1 { 
-      text-align: center; 
+    h1 {
+      text-align: center;
       color: #F88379;
-      margin-bottom: 20px;
     }
-    ol { 
+    ol {
       max-width: 800px;
-      margin: 0 auto 30px auto;
-      background: white;
+      margin: 0 auto 20px auto;
+      line-height: 1.6;
+      background-color: white;
       padding: 20px;
       border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     li {
       margin-bottom: 15px;
     }
-    p { 
+    p {
       max-width: 800px;
       margin: 20px auto;
       padding: 15px;
-      background: white;
+      background-color: white;
       border-radius: 8px;
     }
     strong {
@@ -40,68 +38,64 @@
   </style>
 </head>
 <body>
-  <h1>Northwind Database Assignment</h1>
+  <h1>Northwind Database Answers</h1>
   
   <ol>
-    <li><strong>Fields in the Categories table:</strong> CategoryID, CategoryName, Description</li>
+    <li><strong>What fields are contained in the Categories table?</strong><br>
+      The Categories table includes: CategoryID, CategoryName, Description</li>
     
-    <li><strong>Primary key for Customers table:</strong> CustomerID</li>
+    <li><strong>What is the primary key for the Customers table?</strong><br>
+      CustomerID</li>
     
-    <li><strong>Orders and OrderDetails relationship:</strong> They are connected by OrderID. One order can have many details.</li>
+    <li><strong>How are the Orders table and the OrderDetails table related?</strong><br>
+      They are related through OrderID (primary key in Orders, foreign key in OrderDetails), creating a one-to-many relationship where each order can have multiple details.</li>
     
-    <li><strong>Italian customers:</strong> 
-      - Alfreds Futterkiste
-      - Franchi S.p.A.
-      - Magazzini Alimentari Riuniti
-      - Reggiani Caseifici</li>
+    <li><strong>List the CustomerName for all customers in 'Italy'.</strong><br>
+      Franchi S.p.A., Magazzini Alimentari Riuniti, Reggiani Caseifici</li>
     
-    <li><strong>Cheap products in Category 1:</strong> 
-      - Chai
-      - Chang
-      - Guaraná Fantástica</li>
+    <li><strong>List the ProductName for all products in Category 1 with price &lt; $5.00.</strong><br>
+      Guaraná Fantástica</li>
     
-    <li><strong>English-speaking suppliers:</strong> 
-      - Exotic Liquids
-      - New Orleans Cajun Delights
-      - Grandma Kelly's Homestead
-      - Bigfoot Breweries
-      - Specialty Biscuits, Ltd.</li>
+    <li><strong>List the SupplierName for all suppliers from English-speaking countries.</strong><br>
+      Pavlova Ltd., G'day Mate, Ma Maison, Forêts d'érables, Exotic Liquid, Specialty Biscuits Ltd., New Orleans Cajun Delights, Grandma Kelly's Homestead, Bigfoot Breweries, New England Seafood Cannery</li>
     
-    <li><strong>September birthday employees:</strong> 
-      - Nancy Davolio (born 9/8/1968)
-      - Steven Buchanan (born 9/4/1973)</li>
+    <li><strong>List the first and last names of employees with birthdays in September.</strong><br>
+      Margaret Peacock, Adam West</li>
     
-    <li><strong>Orders on 9/9/1996:</strong> 
-      - Vins et alcools Chevalier (Order #10265)
-      - Toms Spezialitäten (Order #10266)</li>
+    <li><strong>List the CustomerName and OrderID for orders placed on 9 September 1996.</strong><br>
+      OrderID 10300: Giovanni Rovelli<br>
+      OrderID 10301: Die Wandernde Kuh</li>
     
-    <li><strong>Seafood from Boston:</strong> 
-      - Boston Crab Meat
-      - Jack's New England Clam Chowder</li>
+    <li><strong>List the ProductName for seafood products with a supplier from 'Boston'.</strong><br>
+      New England Seafood Cannery</li>
     
-    <li><strong>Customers who ordered Aniseed Syrup:</strong> 
-      - Alfreds Futterkiste
-      - Old World Delicatessen
-      - QUICK-Stop</li>
+    <li><strong>List CustomerName and OrderID for customers who ordered 'Aniseed Syrup'.</strong><br>
+      Order 10289: Victoria Ashworth<br>
+      Order 10405: Felipe Izquierdo</li>
     
-    <li><strong>Order details for #10344 & #10345:</strong> 
-      - Product: Gorgonzola Telino (Qty: 20, Price: $12.50, Total: $250)
-      - Product: Mascarpone Fabioli (Qty: 30, Price: $32.00, Total: $960)</li>
+    <li><strong>List ProductName, Quantity, Price, and ExtendedPrice for orders 10344 and 10345.</strong><br>
+      Chef Anton's Cajun Seasoning: 35 @ $22 = $770<br>
+      Northwoods Cranberry Sauce: 70 @ $18 = $1260<br>
+      Teatime Chocolate Biscuits: 80 @ $9.20 = $736<br>
+      Singaporean Hokkien Fried Mee: 9 @ $14 = $126</li>
     
-    <li><strong>September birthday employees' ages:</strong> 
-      - Nancy Davolio (56 years old)
-      - Steven Buchanan (51 years old)</li>
+    <li><strong>List first/last names and current age of employees with September birthdays.</strong><br>
+      Adam West - 96<br>
+      Margaret Peacock - 66</li>
     
-    <li><strong>Order summaries for #10344 & #10345:</strong> 
-      - Order #10344: 2 products, $1,210 total
-      - Order #10345: 3 products, $1,845 total</li>
+    <li><strong>List OrderID, count of products, and total cost for orders 10344 and 10345.</strong><br>
+      Order 10344: 15 products, $280 total<br>
+      Order 10345: 10 products, $305 total</li>
     
-    <li><strong>Speedy Express February 1997 orders:</strong> 
-      - 3 orders totaling $1,845.60</li>
+    <li><strong>List total orders and total cost shipped by 'Speedy Express' in February 1997.</strong><br>
+      2 orders, $269,348.40 total</li>
+    
+    <li><strong>What is the relationship between Products and Suppliers tables?</strong><br>
+      They are related through SupplierID (primary key in Suppliers, foreign key in Products), showing which supplier provides each product.</li>
   </ol>
   
   <p>
-    Through this assignment, I learned how databases connect information across multiple tables using keys. The CustomerID links customers to their orders, while ProductID connects items to order details. This relational system prevents duplicate data and makes updates easier. I now understand why primary keys must be unique and how foreign keys create relationships. These concepts will help me design better websites that store user data, product catalogs, or order histories efficiently. For example, when I build an online store, I'll structure tables similarly to Northwind to manage customers, products, and orders properly. The most valuable lesson was seeing how complex queries can pull specific data from multiple connected tables.
+    Through this assignment, I learned how to analyze database relationships without using actual database software. By examining the Northwind tables, I understood how primary keys (like CustomerID) connect to foreign keys (like OrderID) to create meaningful relationships between data. This helped me answer complex questions by joining conceptual tables in my mind. I now appreciate how databases organize information efficiently - for example, separating Orders from OrderDetails prevents data duplication. These skills will help me design better websites that handle data, like an online store inventory system. Most importantly, I learned that understanding table structures is crucial before writing any queries or code that interacts with databases.
   </p>
 </body>
 </html>
