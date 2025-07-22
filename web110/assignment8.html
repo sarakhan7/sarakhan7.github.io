@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 8 - SQL Commands</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #FFB6C1;
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #F88379;
+    }
+    ol {
+      max-width: 800px;
+      margin: 0 auto 20px auto;
+      line-height: 1.6;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    li {
+      margin-bottom: 15px;
+    }
+    p {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 15px;
+      background-color: white;
+      border-radius: 8px;
+    }
+    strong {
+      color: #F88379;
+    }
+  </style>
+</head>
+<body>
+  <h1>SQL Commands</h1>
+  
+  <ol>
+    <li><strong>SELECT</strong><br>
+      SELECT * FROM Customers;</li>
 
+    <li><strong>WHERE</strong><br>
+      SELECT CustomerName, Address FROM Customers WHERE Country = 'United Kingdom';</li>
+
+    <li><strong>COUNT</strong><br>
+      SELECT COUNT(*) FROM Orders;</li>
+
+    <li><strong>INSERT INTO</strong><br>
+      INSERT INTO Shippers (ShipperID, ShipperName, Phone) VALUES (4, 'On Time Delivery', '(503) 555-0123');</li>
+
+    <li><strong>UPDATE</strong><br>
+      UPDATE Products SET Price = Price + 1;</li>
+  </ol>
+
+    <p>
+  This lesson really helped demystify SQL for me. I had heard of commands like SELECT and WHERE before, but now I understand how they actually work to pull specific data from a database. Writing queries made me realize how powerful SQL is for organizing and interacting with data. I also learned how INSERT and UPDATE statements can add or change information directly in a table, which feels like real control over a database system. I can definitely see myself using SQL in future development work, especially in full-stack apps where you need to fetch and update live data efficiently.
+</p> 
+</body>
+</html>
