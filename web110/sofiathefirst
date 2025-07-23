@@ -1,0 +1,28 @@
+<!DOCTYPE html> <!-- Declares HTML5 -->
+<html> <!-- Wraps the whole webpage -->
+<head> <!-- Metadata about the page -->
+  <meta charset="UTF-8">
+  <title>Sofia the First Fan Page</title>
+</head>
+
+<body> <!-- Everything users see goes here -->
+
+  <h1>Sofia the First 👑💜</h1> <!-- Main heading -->
+
+  <p>
+    Sofia is just an ordinary girl—until her mom marries the king and she becomes a princess overnight!
+    Join her magical adventures in Enchancia where she learns about kindness, courage, and friendship ✨
+  </p>
+
+  <a href="https://youtu.be/Xze_F5Fbyog?si=Z36QYSidJLO2qZBq" target="_blank">
+    🌟 Watch a full episode of Sofia the First!
+  </a>
+
+  <br><br>
+
+  <img src="https://lumiere-a.akamaihd.net/v1/images/pp_sofiathefirstthefloatingpalace_herobanner_mobile_205_3e801767.jpeg?region=0%2C0%2C640%2C480" 
+       alt="Sofia the First standing in her purple dress" 
+       width="300">
+
+</body>
+</html>
