@@ -1,13 +1,13 @@
-<!DOCTYPE html> <!-- Declares HTML5 -->
-<html> <!-- Wraps the whole webpage -->
-<head> <!-- Metadata about the page -->
+<!DOCTYPE html>
+<html> 
+<head> 
   <meta charset="UTF-8">
   <title>Sofia the First Fan Page</title>
 </head>
 
-<body> <!-- Everything users see goes here -->
+<body> 
 
-  <h1>Sofia the First 👑💜</h1> <!-- Main heading -->
+  <h1>Sofia the First 👑💜</h1> 
 
   <p>
     Sofia is just an ordinary girl—until her mom marries the king and she becomes a princess overnight!
